@@ -35,10 +35,10 @@ module.exports = {
 > **• Model** : ${os.cpus()[0].model} 
 > **• Speed** : ${os.cpus()[0].speed} MHz
 **• MEMORY** :
-> **• Total Memory** : ${(os.totalmem() / 1024 / 1024).toFixed(2)} Mbps
-> **• Free Memory** : ${(os.freemem() / 1024 / 1024).toFixed(2)} Mbps
-> **• Heap Total** : ${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)} Mbps
-> **• Heap Usage** : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} Mbps
+> **• Total Memory** : ${(os.totalmem() / 1024 / 1024).toFixed(2)} MBs
+> **• Free Memory** : ${(os.freemem() / 1024 / 1024).toFixed(2)} MBs
+> **• Heap Total** : ${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)} MBs
+> **• Heap Usage** : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MBs
 `);
          message.channel.send({embeds: [embed]});
     }

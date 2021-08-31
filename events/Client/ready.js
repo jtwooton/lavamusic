@@ -7,10 +7,10 @@ module.exports = async (client) => {
     client.logger.log(`Ready on ${client.guilds.cache.size} servers, for a total of ${client.users.cache.size} users`, "ready");
 
     //Game
-    let statuses = ['blacky', `Prefix : ${prefix}`];
+    let statuses = ['YouTube', `Prefix: ${prefix}`, 'Never gonna give you up', 'With your mind'];
     setInterval(function() {
   		let status = statuses[Math.floor(Math.random()*statuses.length)];
   		client.user.setActivity(status, {type: "PLAYING"});
-  	}, 10000)
+  	}, 60000)
 
 }
