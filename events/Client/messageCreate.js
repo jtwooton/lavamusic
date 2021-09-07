@@ -54,7 +54,7 @@ module.exports = async (client, message) => {
     }
 
     if (command.owner && message.author.id !== `${client.owner}`) {
-        embed.setDescription("Only <@491577179495333903> can use this command!");
+        embed.setDescription(`Only ${client.users.resolve(client.owner)?.tag || 'the bot owner'} can use this command!`);
         return message.channel.send({embeds: [embed]});
     }
 

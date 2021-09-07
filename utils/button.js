@@ -90,7 +90,7 @@ const {
       const collector = message.createMessageComponentCollector({
         filter,
         componentType: "BUTTON",
-        time: 30000
+        time: 120000
       });
   
       collector.on("collect", buttons);
@@ -102,7 +102,6 @@ const {
   
   
         message.edit({
-          embeds: [embeds[0]],
           components: [button]
         })
       });
